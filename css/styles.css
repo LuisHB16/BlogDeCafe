@@ -209,3 +209,22 @@ img {
     background-color: var(--black);
     margin-top: 4rem;
 }
+
+/** ABOUT US **/
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .about-us {
+        flex-direction: row;
+        gap: 4rem;
+    }
+    
+    .about-us__image,
+    .about-us__text {
+        flex-basis: 50%;
+    }
+}
